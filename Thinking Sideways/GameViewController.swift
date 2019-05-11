@@ -79,8 +79,7 @@ extension GameViewController : SCNSceneRendererDelegate{
         selfieStickNode.position = cameraPosition
         
         motion.getAccelerometerData { (x, y, z) in
-            self.motionForce = SCNVector3(x * 0.05, 0, (y +
-                0.8) * -0.05)
+            self.motionForce = SCNVector3(x * 0.3, 0, y * -0.3)
         }
         
         ballNode.physicsBody?.velocity += motionForce
