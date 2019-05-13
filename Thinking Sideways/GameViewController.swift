@@ -12,7 +12,7 @@ import SceneKit
 
 class GameViewController: UIViewController {
     
-    var sceneView : SCNView!
+    @IBOutlet weak var sceneView: SCNView!
     var scene : SCNScene!
     
     var ballNode : SCNNode!
@@ -29,7 +29,7 @@ class GameViewController: UIViewController {
     }
     
     func setupScene(){
-        sceneView = self.view as? SCNView
+        
         sceneView.delegate = self
         
         //sceneView.allowsCameraControl = true
@@ -79,9 +79,14 @@ extension GameViewController : SCNSceneRendererDelegate{
         selfieStickNode.position = cameraPosition
         
         motion.getAccelerometerData { (x, y, z) in
-            self.motionForce = SCNVector3(x * 0.3, 0, (y + 0.4) * -0.3)
+            self.motionForce = SCNVector3(y * 0.3, 0, (z + 0.2) * 0.3)
         }
         
          ballNode.physicsBody?.velocity += motionForce
+        
+        if ballPosition.z <= -295{
+            self.scene.isPaused = true
+            self.performSegue(withIdentifier: "toTest", sender: self)
+        }
     }
 }
