@@ -12,6 +12,7 @@ import SceneKit
 
 class GameViewController: UIViewController {
     
+    @IBOutlet weak var tintView: UIView!
     @IBOutlet weak var sceneView: SCNView!
     var scene : SCNScene!
     
@@ -56,6 +57,26 @@ class GameViewController: UIViewController {
         return .landscape
         
     }
+    
+    func setTint(color: UIColor!){
+        DispatchQueue.main.async {
+            UIView.animate(withDuration: 0.5) {
+                self.tintView.backgroundColor = color
+            }
+        }
+    }
+    
+    func ballIsInRange(minX : Float, maxX : Float, minZ : Float, maxZ : Float) -> Bool{
+        let ballPosition = ballNode.presentation.position
+        
+        if ballPosition.x >= minX && ballPosition.x <= maxX && ballPosition.z >= minZ && ballPosition.z <= maxZ{
+            return true
+        }else{
+            return false
+        }
+        
+    }
+    
 }
 
 extension GameViewController : SCNSceneRendererDelegate{
@@ -84,9 +105,23 @@ extension GameViewController : SCNSceneRendererDelegate{
         
          ballNode.physicsBody?.velocity += motionForce
         
-        if ballPosition.z <= -295{
+        if ballIsInRange(minX: 10, maxX: 60, minZ: -60, maxZ: -50){
+           
+            self.setTint(color: .blue)
+            
+        }else if ballIsInRange(minX: 0, maxX: 70, minZ: -120, maxZ: -110){
+            
+            self.setTint(color: .orange)
+            
+        }else if ballIsInRange(minX: -110, maxX: -50, minZ: -220, maxZ: -210){
+            self.setTint(color: .yellow)
+        }else if ballPosition.z <= -295{
+            
             self.scene.isPaused = true
             self.performSegue(withIdentifier: "toTest", sender: self)
+        }else{
+            
+            self.setTint(color: .clear)
         }
     }
 }

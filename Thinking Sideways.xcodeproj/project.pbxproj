@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		3FADA86A2284715900EE58FB /* MotionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FADA8682284715900EE58FB /* MotionHelper.swift */; };
 		3FADA86B2284715900EE58FB /* vectorOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FADA8692284715900EE58FB /* vectorOperations.swift */; };
-		3FFB6CCA22845955000EDDC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFB6CC922845955000EDDC6 /* AppDelegate.swift */; };
 		3FFB6CCC22845955000EDDC6 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FFB6CCB22845955000EDDC6 /* art.scnassets */; };
 		3FFB6CCE22845955000EDDC6 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFB6CCD22845955000EDDC6 /* GameViewController.swift */; };
 		3FFB6CD122845955000EDDC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FFB6CCF22845955000EDDC6 /* Main.storyboard */; };
@@ -21,7 +20,6 @@
 		3FADA8682284715900EE58FB /* MotionHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotionHelper.swift; sourceTree = "<group>"; };
 		3FADA8692284715900EE58FB /* vectorOperations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = vectorOperations.swift; sourceTree = "<group>"; };
 		3FFB6CC622845955000EDDC6 /* Thinking Sideways.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Thinking Sideways.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3FFB6CC922845955000EDDC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FFB6CCB22845955000EDDC6 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		3FFB6CCD22845955000EDDC6 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		3FFB6CD022845955000EDDC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -71,7 +69,6 @@
 			children = (
 				3FADA8672284715900EE58FB /* Helper */,
 				3FFB6CCB22845955000EDDC6 /* art.scnassets */,
-				3FFB6CC922845955000EDDC6 /* AppDelegate.swift */,
 				3FFB6CCD22845955000EDDC6 /* GameViewController.swift */,
 				3FFB6CCF22845955000EDDC6 /* Main.storyboard */,
 				3FFB6CD222845957000EDDC6 /* Assets.xcassets */,
@@ -155,7 +152,6 @@
 			files = (
 				3FADA86B2284715900EE58FB /* vectorOperations.swift in Sources */,
 				3FFB6CCE22845955000EDDC6 /* GameViewController.swift in Sources */,
-				3FFB6CCA22845955000EDDC6 /* AppDelegate.swift in Sources */,
 				3FADA86A2284715900EE58FB /* MotionHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

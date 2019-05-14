@@ -22,7 +22,6 @@
                             </sceneKitView>
                             <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hLk-gZ-stO">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <color key="backgroundColor" red="0.71764707569999997" green="0.4431372583" blue="0.88627451660000001" alpha="1" colorSpace="deviceRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -40,6 +39,7 @@
                     </view>
                     <connections>
                         <outlet property="sceneView" destination="lgu-kJ-Ev7" id="xJP-p3-Etd"/>
+                        <outlet property="tintView" destination="hLk-gZ-stO" id="gee-oq-6Q8"/>
                         <segue destination="Q7T-4G-7nb" kind="show" identifier="toTest" animates="NO" id="fh6-aY-idm"/>
                     </connections>
                 </viewController>
@@ -63,14 +63,6 @@
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="w6p-m8-hS3"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ub7-2a-HK4">
-                                <rect key="frame" x="354" y="257" width="40" height="40"/>
-                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="84P-Rd-qLL"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="evL-2E-VdH"/>
-                                </constraints>
-                            </view>
                             <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eD3-Up-SPc">
                                 <rect key="frame" x="354" y="428" width="40" height="40"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
@@ -88,21 +80,42 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EBh-fR-DXE">
-                                <rect key="frame" x="354" y="646" width="40" height="40"/>
+                                <rect key="frame" x="354" y="627" width="40" height="40"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="G9A-Hv-4CK"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="XSn-kh-sI4"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ub7-2a-HK4">
+                                <rect key="frame" x="354" y="236" width="40" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="84P-Rd-qLL"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="evL-2E-VdH"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="eD3-Up-SPc" firstAttribute="centerY" secondItem="WU0-B4-nA9" secondAttribute="centerY" id="05i-VH-Llu"/>
+                            <constraint firstItem="Eqf-ut-2G0" firstAttribute="bottom" secondItem="kdZ-f5-Suv" secondAttribute="bottom" id="2kn-S7-8py"/>
+                            <constraint firstItem="kdZ-f5-Suv" firstAttribute="trailing" secondItem="eD3-Up-SPc" secondAttribute="trailing" constant="20" id="BcY-Mj-UEY"/>
+                            <constraint firstItem="kdZ-f5-Suv" firstAttribute="trailing" secondItem="jMi-j8-871" secondAttribute="trailing" constant="20" id="I3r-6G-n7V"/>
+                            <constraint firstItem="jMi-j8-871" firstAttribute="top" secondItem="kdZ-f5-Suv" secondAttribute="top" id="Wa4-Qi-73W"/>
+                            <constraint firstItem="eD3-Up-SPc" firstAttribute="top" secondItem="ub7-2a-HK4" secondAttribute="bottom" constant="152" id="afL-VT-Kgc"/>
+                            <constraint firstItem="ub7-2a-HK4" firstAttribute="top" secondItem="jMi-j8-871" secondAttribute="bottom" constant="152" id="jLO-74-LOt"/>
+                            <constraint firstItem="kdZ-f5-Suv" firstAttribute="trailing" secondItem="Eqf-ut-2G0" secondAttribute="trailing" constant="20" id="l7H-K3-wLS"/>
+                            <constraint firstItem="EBh-fR-DXE" firstAttribute="top" secondItem="eD3-Up-SPc" secondAttribute="bottom" constant="155.5" id="mC9-0k-mTs"/>
+                            <constraint firstItem="kdZ-f5-Suv" firstAttribute="trailing" secondItem="EBh-fR-DXE" secondAttribute="trailing" constant="20" id="pkO-Fs-Ibm"/>
+                            <constraint firstItem="Eqf-ut-2G0" firstAttribute="top" secondItem="EBh-fR-DXE" secondAttribute="bottom" constant="155.5" id="qth-dv-3W4"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="kdZ-f5-Suv"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7I9-fX-3OI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="867" y="76"/>
+            <point key="canvasLocation" x="866.66666666666674" y="75.669642857142847"/>
         </scene>
     </scenes>
 </document>
