@@ -103,18 +103,22 @@ extension GameViewController : SCNSceneRendererDelegate{
             self.motionForce = SCNVector3(y * 0.3, 0, (z + 0.2) * 0.3)
         }
         
-         ballNode.physicsBody?.velocity += motionForce
+        ballNode.physicsBody?.velocity += motionForce
         
         if ballIsInRange(minX: 10, maxX: 60, minZ: -60, maxZ: -50){
-           
+            
             self.setTint(color: .blue)
             
         }else if ballIsInRange(minX: 0, maxX: 70, minZ: -120, maxZ: -110){
             
             self.setTint(color: .orange)
             
-        }else if ballIsInRange(minX: -110, maxX: -50, minZ: -220, maxZ: -210){
+        }else if ballIsInRange(minX: -110, maxX: -50, minZ: -230, maxZ: -220){
             self.setTint(color: .yellow)
+        }else if ballIsInRange(minX: -15, maxX: 5, minZ: -180, maxZ: -110){
+            self.setTint(color: .green)
+        }else if ballIsInRange(minX: -35, maxX: -15, minZ: -250, maxZ: -230){
+            self.setTint(color: .purple)
         }else if ballPosition.z <= -295{
             
             self.scene.isPaused = true
