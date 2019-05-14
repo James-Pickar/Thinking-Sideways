@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
-    <device id="retina6_1" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Q7T-4G-7nb">
+    <device id="retina3_5" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -14,14 +14,14 @@
             <objects>
                 <viewController id="BV1-FR-VrT" customClass="GameViewController" customModule="Thinking_Sideways" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5D8-ON-Jpv">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lgu-kJ-Ev7">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
                             </sceneKitView>
                             <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hLk-gZ-stO">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -47,75 +47,174 @@
             </objects>
             <point key="canvasLocation" x="118.84057971014494" y="75.669642857142847"/>
         </scene>
-        <!--View Controller-->
+        <!--Quiz View Controller-->
         <scene sceneID="JaF-Rc-4gU">
             <objects>
-                <viewController id="Q7T-4G-7nb" sceneMemberID="viewController">
+                <viewController id="Q7T-4G-7nb" customClass="QuizViewController" customModule="Thinking_Sideways" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WU0-B4-nA9">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Eqf-ut-2G0">
-                                <rect key="frame" x="354" y="822" width="40" height="40"/>
-                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kMr-SQ-zps">
+                                <rect key="frame" x="225" y="270" width="30" height="30"/>
+                                <color key="backgroundColor" red="0.1154931709" green="0.15397557619999999" blue="0.89324665069999998" alpha="1" colorSpace="deviceRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="EaA-NO-re5"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="w6p-m8-hS3"/>
+                                    <constraint firstAttribute="height" constant="30" id="Ukw-Ys-vqG"/>
+                                    <constraint firstAttribute="width" constant="30" id="n2N-X3-Nn4"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eD3-Up-SPc">
-                                <rect key="frame" x="354" y="428" width="40" height="40"/>
-                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cYE-TV-7Xe">
+                                <rect key="frame" x="434" y="20" width="30" height="30"/>
+                                <color key="backgroundColor" red="0.1154931709" green="0.15397557619999999" blue="0.89324665069999998" alpha="1" colorSpace="deviceRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="deb-51-Xdt"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="uKJ-ui-Psz"/>
+                                    <constraint firstAttribute="width" constant="30" id="Wk6-TI-SV0"/>
+                                    <constraint firstAttribute="height" constant="30" id="x1I-n0-xZR"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jMi-j8-871">
-                                <rect key="frame" x="354" y="44" width="40" height="40"/>
-                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WPf-pG-H4f">
+                                <rect key="frame" x="434" y="270" width="30" height="30"/>
+                                <color key="backgroundColor" red="0.1154931709" green="0.15397557619999999" blue="0.89324665069999998" alpha="1" colorSpace="deviceRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="Msg-5B-STd"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="SJw-0k-PyX"/>
+                                    <constraint firstAttribute="width" constant="30" id="Aqi-ac-6oh"/>
+                                    <constraint firstAttribute="height" constant="30" id="rX6-5l-uSW"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EBh-fR-DXE">
-                                <rect key="frame" x="354" y="627" width="40" height="40"/>
-                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T20-Pi-u0K">
+                                <rect key="frame" x="16" y="20" width="30" height="30"/>
+                                <color key="backgroundColor" red="0.1154931709" green="0.15397557619999999" blue="0.89324665069999998" alpha="1" colorSpace="deviceRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="G9A-Hv-4CK"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="XSn-kh-sI4"/>
+                                    <constraint firstAttribute="height" constant="30" id="gaK-9x-Arv"/>
+                                    <constraint firstAttribute="width" constant="30" id="ieZ-WQ-9yz"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ub7-2a-HK4">
-                                <rect key="frame" x="354" y="236" width="40" height="40"/>
-                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="BbW-xM-r0S">
+                                <rect key="frame" x="16" y="135" width="448" height="50"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bL5-8z-4Y0">
+                                        <rect key="frame" x="0.0" y="0.0" width="49.5" height="50"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pZ8-kY-LAV">
+                                                <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qzX-GR-Anh">
+                                                <rect key="frame" x="5" y="5" width="20" height="20"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4il-Me-mbF">
+                                        <rect key="frame" x="99.5" y="0.0" width="49.5" height="50"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wIW-zm-xUD">
+                                                <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aUg-Er-7de">
+                                                <rect key="frame" x="5" y="5" width="20" height="20"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kY1-Pp-QCh">
+                                        <rect key="frame" x="199" y="0.0" width="50" height="50"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fta-Ew-aak">
+                                                <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Si-g8-lqm">
+                                                <rect key="frame" x="5" y="5" width="20" height="20"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rHU-uT-d4c">
+                                        <rect key="frame" x="299" y="0.0" width="49.5" height="50"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bfK-yO-Qaq">
+                                                <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="peA-k2-s8K">
+                                                <rect key="frame" x="5" y="5" width="20" height="20"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZtC-2u-90o">
+                                        <rect key="frame" x="398.5" y="0.0" width="49.5" height="50"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dje-jP-ne3">
+                                                <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FC0-lh-EIF">
+                                                <rect key="frame" x="5" y="5" width="20" height="20"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uVD-ld-aYc">
+                                <rect key="frame" x="16" y="270" width="30" height="30"/>
+                                <color key="backgroundColor" red="0.1154931709" green="0.15397557619999999" blue="0.89324665069999998" alpha="1" colorSpace="deviceRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="84P-Rd-qLL"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="evL-2E-VdH"/>
+                                    <constraint firstAttribute="width" constant="30" id="C3c-WQ-jIi"/>
+                                    <constraint firstAttribute="height" constant="30" id="ZBT-yb-jip"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="eD3-Up-SPc" firstAttribute="centerY" secondItem="WU0-B4-nA9" secondAttribute="centerY" id="05i-VH-Llu"/>
-                            <constraint firstItem="Eqf-ut-2G0" firstAttribute="bottom" secondItem="kdZ-f5-Suv" secondAttribute="bottom" id="2kn-S7-8py"/>
-                            <constraint firstItem="kdZ-f5-Suv" firstAttribute="trailing" secondItem="eD3-Up-SPc" secondAttribute="trailing" constant="20" id="BcY-Mj-UEY"/>
-                            <constraint firstItem="kdZ-f5-Suv" firstAttribute="trailing" secondItem="jMi-j8-871" secondAttribute="trailing" constant="20" id="I3r-6G-n7V"/>
-                            <constraint firstItem="jMi-j8-871" firstAttribute="top" secondItem="kdZ-f5-Suv" secondAttribute="top" id="Wa4-Qi-73W"/>
-                            <constraint firstItem="eD3-Up-SPc" firstAttribute="top" secondItem="ub7-2a-HK4" secondAttribute="bottom" constant="152" id="afL-VT-Kgc"/>
-                            <constraint firstItem="ub7-2a-HK4" firstAttribute="top" secondItem="jMi-j8-871" secondAttribute="bottom" constant="152" id="jLO-74-LOt"/>
-                            <constraint firstItem="kdZ-f5-Suv" firstAttribute="trailing" secondItem="Eqf-ut-2G0" secondAttribute="trailing" constant="20" id="l7H-K3-wLS"/>
-                            <constraint firstItem="EBh-fR-DXE" firstAttribute="top" secondItem="eD3-Up-SPc" secondAttribute="bottom" constant="155.5" id="mC9-0k-mTs"/>
-                            <constraint firstItem="kdZ-f5-Suv" firstAttribute="trailing" secondItem="EBh-fR-DXE" secondAttribute="trailing" constant="20" id="pkO-Fs-Ibm"/>
-                            <constraint firstItem="Eqf-ut-2G0" firstAttribute="top" secondItem="EBh-fR-DXE" secondAttribute="bottom" constant="155.5" id="qth-dv-3W4"/>
+                            <constraint firstItem="kdZ-f5-Suv" firstAttribute="trailing" secondItem="WPf-pG-H4f" secondAttribute="trailing" constant="16" id="1zA-oD-as6"/>
+                            <constraint firstItem="kMr-SQ-zps" firstAttribute="centerX" secondItem="WU0-B4-nA9" secondAttribute="centerX" id="5vd-8a-J4n"/>
+                            <constraint firstItem="kdZ-f5-Suv" firstAttribute="bottom" secondItem="kMr-SQ-zps" secondAttribute="bottom" constant="20" id="8CQ-O2-JCP"/>
+                            <constraint firstItem="kdZ-f5-Suv" firstAttribute="bottom" secondItem="WPf-pG-H4f" secondAttribute="bottom" constant="20" id="CyY-VC-ysD"/>
+                            <constraint firstItem="BbW-xM-r0S" firstAttribute="centerY" secondItem="WU0-B4-nA9" secondAttribute="centerY" id="Esj-gA-7kc"/>
+                            <constraint firstItem="T20-Pi-u0K" firstAttribute="leading" secondItem="kdZ-f5-Suv" secondAttribute="leading" constant="16" id="Gpb-va-r0t"/>
+                            <constraint firstItem="cYE-TV-7Xe" firstAttribute="top" secondItem="kdZ-f5-Suv" secondAttribute="top" constant="20" id="KVM-Vj-cA2"/>
+                            <constraint firstItem="kdZ-f5-Suv" firstAttribute="bottom" secondItem="uVD-ld-aYc" secondAttribute="bottom" constant="20" id="Vtq-W4-0QQ"/>
+                            <constraint firstItem="kdZ-f5-Suv" firstAttribute="trailing" secondItem="BbW-xM-r0S" secondAttribute="trailing" constant="16" id="dXa-oe-auI"/>
+                            <constraint firstItem="kdZ-f5-Suv" firstAttribute="trailing" secondItem="cYE-TV-7Xe" secondAttribute="trailing" constant="16" id="fp6-Bo-3vB"/>
+                            <constraint firstItem="T20-Pi-u0K" firstAttribute="top" secondItem="kdZ-f5-Suv" secondAttribute="top" constant="20" id="hBV-Re-scq"/>
+                            <constraint firstItem="uVD-ld-aYc" firstAttribute="leading" secondItem="kdZ-f5-Suv" secondAttribute="leading" constant="16" id="iqJ-nT-vSm"/>
+                            <constraint firstItem="BbW-xM-r0S" firstAttribute="leading" secondItem="kdZ-f5-Suv" secondAttribute="leading" constant="16" id="ptO-Px-eGJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kdZ-f5-Suv"/>
                     </view>
+                    <connections>
+                        <outlet property="dragable0" destination="T20-Pi-u0K" id="vDh-Jr-Fln"/>
+                        <outlet property="dragable1" destination="cYE-TV-7Xe" id="hab-t9-3A4"/>
+                        <outlet property="dragable2" destination="uVD-ld-aYc" id="P7L-G7-QGY"/>
+                        <outlet property="dragable3" destination="kMr-SQ-zps" id="6q9-bV-ylu"/>
+                        <outlet property="dragable4" destination="WPf-pG-H4f" id="HD9-RS-zcC"/>
+                        <outlet property="place0" destination="bL5-8z-4Y0" id="5sg-KI-kyi"/>
+                        <outlet property="place1" destination="4il-Me-mbF" id="ayi-tV-jVd"/>
+                        <outlet property="place2" destination="kY1-Pp-QCh" id="QEd-CB-iAt"/>
+                        <outlet property="place3" destination="rHU-uT-d4c" id="28T-RT-XY5"/>
+                        <outlet property="place4" destination="ZtC-2u-90o" id="pxg-If-Y4N"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7I9-fX-3OI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="866.66666666666674" y="75.669642857142847"/>
+            <point key="canvasLocation" x="866.25" y="75"/>
         </scene>
     </scenes>
 </document>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F7E3BE7228AFBBA0085601D /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7E3BE6228AFBBA0085601D /* QuizViewController.swift */; };
 		3FADA86A2284715900EE58FB /* MotionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FADA8682284715900EE58FB /* MotionHelper.swift */; };
 		3FADA86B2284715900EE58FB /* vectorOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FADA8692284715900EE58FB /* vectorOperations.swift */; };
 		3FDECA3F228AEC7000D467CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDECA3E228AEC7000D467CD /* AppDelegate.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F7E3BE6228AFBBA0085601D /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		3FADA8682284715900EE58FB /* MotionHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotionHelper.swift; sourceTree = "<group>"; };
 		3FADA8692284715900EE58FB /* vectorOperations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = vectorOperations.swift; sourceTree = "<group>"; };
 		3FDECA3E228AEC7000D467CD /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 				3FFB6CCD22845955000EDDC6 /* GameViewController.swift */,
 				3FDECA3E228AEC7000D467CD /* AppDelegate.swift */,
 				3FFB6CCF22845955000EDDC6 /* Main.storyboard */,
+				3F7E3BE6228AFBBA0085601D /* QuizViewController.swift */,
 				3FFB6CD222845957000EDDC6 /* Assets.xcassets */,
 				3FFB6CD422845957000EDDC6 /* LaunchScreen.storyboard */,
 				3FFB6CD722845957000EDDC6 /* Info.plist */,
@@ -154,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FDECA3F228AEC7000D467CD /* AppDelegate.swift in Sources */,
+				3F7E3BE7228AFBBA0085601D /* QuizViewController.swift in Sources */,
 				3FADA86B2284715900EE58FB /* vectorOperations.swift in Sources */,
 				3FFB6CCE22845955000EDDC6 /* GameViewController.swift in Sources */,
 				3FADA86A2284715900EE58FB /* MotionHelper.swift in Sources */,
