@@ -25,7 +25,7 @@ class QuizViewController: UIViewController {
     
     var dragables : [UIView] = []
     var placeables : [UIView : UIView] = [:]
-    let colors : [UIColor] = [.blue, .orange, .yellow, .orange, .green, .purple]
+    let colors : [UIColor] = [.blue, .orange, .yellow, .green, .purple]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,48 +36,36 @@ class QuizViewController: UIViewController {
         dragables.append(dragable3)
         dragables.append(dragable4)
         
+        var i = 0
+        
         for dragable in dragables{
             dragable.isUserInteractionEnabled = true
-            let panGesture = UIPanGestureRecognizer(target: self, action: #selector(panGesture(recognizer:)))
-            panGesture.minimumNumberOfTouches = 1
-            dragable.addGestureRecognizer(panGesture)
             
+            dragable.backgroundColor = colors[i]
+            dragable.alpha = 0.5
+            i+=1
         }
         
     }
     
-    @objc func panGesture(recognizer:UIPanGestureRecognizer){
-        
-        if let dragView = recognizer.view{
+    
+    
+    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if let touch = touches.first{
+            let touchPosistion = touch.location(in: self.view)
             
-            self.view.bringSubviewToFront(dragView)
-            let translation = recognizer.translation(in: self.view)
-            dragView.center = CGPoint(x: dragView.center.x + translation.x, y: dragView.center.y + translation.y)
-            recognizer.setTranslation(CGPoint.zero, in: self.view)
-            
-            let center = dragView.center
-            dragView.center = center
-        
-           /*
-            let constraintRight = NSLayoutConstraint(item: dragView, attribute: .centerX, relatedBy: .equal, toItem: dragView.superview, attribute: .right, multiplier: 1, constant: dragView.center.x - UIScreen.main.fixedCoordinateSpace.bounds.width)
-             let constraintTop = NSLayoutConstraint(item: dragView, attribute: .centerY, relatedBy: .equal, toItem: dragView.superview, attribute: .top, multiplier: 1, constant: dragView.center.y - UIScreen.main.fixedCoordinateSpace.bounds.height)
-            
-            var constraitsToRemove : [NSLayoutConstraint] = []
-            
-            for constrait in dragView.constraints{
-                if constrait.firstAttribute != .width && constrait.secondAttribute != .width && constrait.firstAttribute != .height && constrait.secondAttribute != .height{
-                    constraitsToRemove.append(constrait)
+            for dragable in dragables{
+                
+                if dragable.frame.contains(touchPosistion){
+                    
+                    UIView.animate(withDuration: 0.1) {
+                        
+                        dragable.center = touchPosistion
+                    }
                 }
             }
-            
-            dragView.removeConstraints(constraitsToRemove)
-            dragView.addConstraint(constraintRight)
-            dragView.addConstraint(constraintTop)
-            */
         }
     }
-    
-    
     /*
      // MARK: - Navigation
      
